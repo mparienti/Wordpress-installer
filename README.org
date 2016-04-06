@@ -1,0 +1,21 @@
+
+* Presentation
+#+BEGIN_EXAMPLE
+install.sh -d <install-dir> (others options…)
+
+Other options:
+-t target_directory (default: current directory)
+-q: use this option to run the script in quiet mode: nothing will be displayed, unless an error happens
+-d database_name (default: random)
+-d database_user (default: random)
+-p database_password (default: random)
+-o database_host (default: localhost)
+-c: create database (default: no) - You must have the right mysql perms to do so
+-w: create database user (default: no) - You must have the right mysql perms to do so
+#+END_EXAMPLE
+
+* Todo
+
+1. Create Nginx configuration file
+2. Generate certificate with Letsencrypt
+3. Test if Mysql server version is >= 5.7 to add ~IF NOT EXISTS~ after ~CREATE USER~
